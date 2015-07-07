@@ -19,9 +19,10 @@
 
     <script src="solve.js"></script>
     <script>
-      var size = 6;
+      var size = 12,
+          delay = 250;
       generateBoard(size);
-      solve(size, size);
+      render(solve(size, size), delay);
     </script>
 
   </body>

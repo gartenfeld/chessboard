@@ -3,16 +3,17 @@ a {
     display:block;
     font-size:60px;
     height:80px;
-    line-height: 145%;
+    line-height: 135%;
     position:relative;
     text-decoration:none;
     text-shadow:0 1px #fff;
     width:80px;
 }
 #chess_board { 
-    border:5px solid #777;
+    border: 3px solid #999;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 6%;
+    box-shadow: 3px 3px 3px 0px #777;
 }
 
 #chess_board td {
