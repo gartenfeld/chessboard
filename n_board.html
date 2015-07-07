@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="queens.css">
+    <link rel="stylesheet" type="text/css" href="css/queens.css">
   </head>
 
   <body>
@@ -15,13 +15,13 @@
 
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/underscore/underscore.js"></script>
-    <script src="generate.js"></script>
+    <script src="js/generate.js"></script>
 
-    <script src="solve.js"></script>
+    <script src="js/solve.js"></script>
     <script>
-      var size = 12,
-          delayTimeout = 50;
-      generateBoard(size);
+      var size = 8,
+          delay = 500;
+      generate(size);
       render(solve(size, size));
     </script>
 
