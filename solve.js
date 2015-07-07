@@ -53,13 +53,13 @@ var clear = function (size) {
   }
 };
 
-var render = function (playbook, delay) {
+var render = function (playbook) {
   var max = playbook.length - 1;
-  renderOne(playbook, 0, max, delay);
+  renderOne(playbook, 0, max);
 
 };
 
-var renderOne = function(playbook, which, max, delay) {
+var renderOne = function(playbook, which, max) {
   var play = playbook[which];
   var coordinate, cell;
   
@@ -74,6 +74,6 @@ var renderOne = function(playbook, which, max, delay) {
   if (which < max) {
     setTimeout(function(){
       renderOne(playbook, which + 1, max);
-    }, delay);
+    }, delayTimeout);
   }
 };
